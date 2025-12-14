@@ -1,0 +1,71 @@
+/* Make body full height and flex container */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container takes full height */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color:#4dabf7;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Main content grows to fill space */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* Video & Images */
+video {
+    max-width: 100%;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
